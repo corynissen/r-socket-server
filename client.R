@@ -1,6 +1,7 @@
 client <- function(){
   while(TRUE){
-    con <- socketConnection(host="localhost", port = 6011, blocking=TRUE,server=FALSE, open="r+")
+    con <- socketConnection(host="localhost", port = 6011, blocking=TRUE,
+                            server=FALSE, open="r+")
     f <- file("stdin")
     open(f)
     print("Enter text to be upper-cased, q to quit")
